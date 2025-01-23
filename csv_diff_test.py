@@ -2,7 +2,7 @@ from csv_diff import load_csv, compare
 from csv import DictWriter
 diff = compare(
     load_csv(open("core1.csv"), key="fsid"),
-    load_csv(open("missing1.csv"), key="fsid")
+    load_csv(open("backlog_ids.csv"), key="fsid")
 )
 
 # Get all the row headers across all the changes
